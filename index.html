@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/favicon-32x32.png" type="image/icon type" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__navigation">
+        <div class="header__navigation-menu" data-toggle-btn="[data-menu]">
+          <i class="icon menu-icon"></i>
+        </div>
+        <a class="header__navigation-logo" href="#">
+          <img src="./img/logo.svg" alt="" aria-hidden="true" />
+        </a>
+        <nav class="header__navigation-links" data-menu>
+          <ul>
+            <li>
+              <i
+                class="header__navigation-close icon cross-icon"
+                data-toggle-btn="[data-menu]"
+              ></i>
+            </li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__user">
+        <div class="header__user-cart" data-toggle-btn="[data-cart]">
+          <span class="header__user-cartcount" data-cart-count>0</span>
+          <i class="icon cart-icon"></i>
+        </div>
+        <div class="header__user-profile">
+          <img src="./img/image-avatar.png" alt="User avatar" />
+        </div>
+      </div>
+      <div class="cart" data-cart>
+        <span class="cart__title">Cart</span>
+        <div class="cart__items-container">
+          <div class="cart__item" data-cartitem>
+            <div class="cart__item-img">
+              <img
+                src="./img/image-product-1-thumbnail.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <div class="cart__item-info">
+              <p>Autumn Limited Edition Sneakers</p>
+              <span
+                >$125.00 x <span data-cartitem-count>0</span>
+                <strong data-cartitem-price>$0.00</strong></span
+              >
+            </div>
+            <i class="icon trash-icon" data-cartitem-delete></i>
+          </div>
+          <button class="main-btn--cart" type="button" data-cart-checkout>
+            Checkout
+          </button>
+          <p class="cart__empty active" data-cart-empty>Your cart is empty.</p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product-display">
+        <div class="product-display__lg" data-product-display>
+          <img src="./img/image-product-1.jpg" alt="" aria-hidden="true" />
+        </div>
+        <div class="carousel" data-carousel>
+          <div class="carousel__wrapper">
+            <div class="carousel__close" data-toggle-btn="[data-carousel]">
+              <i class="icon cross-icon"></i>
+            </div>
+            <div class="carousel-arrow move-left" data-carousel-btn="prev">
+              <i class="icon left-arrow"></i>
+            </div>
+            <div class="carousel-arrow move-right" data-carousel-btn="next">
+              <i class="icon right-arrow"></i>
+            </div>
+            <ul data-slides>
+              <li class="carousel__slide" data-active>
+                <img
+                  src="./img/image-product-1.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./img/image-product-2.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./img/image-product-3.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  src="./img/image-product-4.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+            </ul>
+            <ul class="carousel__change" data-carousel-change>
+              <li data-active>
+                <img
+                  src="./img/image-product-1-thumbnail.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/image-product-2-thumbnail.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/image-product-3-thumbnail.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/image-product-4-thumbnail.jpg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-display__sm">
+          <ul data-change-btns>
+            <li data-src="./img/image-product-1.jpg" data-active>
+              <img
+                src="./img/image-product-1-thumbnail.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+            <li data-src="./img/image-product-2.jpg">
+              <img
+                src="./img/image-product-2-thumbnail.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+            <li data-src="./img/image-product-3.jpg">
+              <img
+                src="./img/image-product-3-thumbnail.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+            <li data-src="./img/image-product-4.jpg">
+              <img
+                src="./img/image-product-4-thumbnail.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product-details">
+        <span class="product-details__company">Sneaker Company</span>
+        <article class="product-details__info">
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+        </article>
+        <div class="product-details__price">
+          <strong>$125.00</strong>
+          <span>50%</span>
+          <p>$250.00</p>
+        </div>
+        <div class="product-details__buttons">
+          <div class="counter" data-counter>
+            <div class="counter__remove">
+              <i class="icon minus-icon" data-counter-btn="decrease"></i>
+            </div>
+            <span class="counter__count" data-counter-count>1</span>
+            <div class="counter__add">
+              <i class="icon plus-icon" data-counter-btn="increase"></i>
+            </div>
+          </div>
+          <button class="main-btn" type="button" data-cart-add>
+            <i class="icon cart-icon"></i>Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
